@@ -1,4 +1,3 @@
-
 function translatePigLatin(str) {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let newStr = "";
@@ -13,13 +12,24 @@ function translatePigLatin(str) {
       return newStr;
   }
 }
+function acceptChar(str) {
+	let acceptable = ['a', 'b', 'c'];
+  let newStr = "";
   
+  if (str !== acceptable.indexOf(str[0]) >-1) {
+      alert("unacceptable");
+      
+	}
+
+}
+
 $(document).ready(function() {
   $("form#calculator").submit(function() {
     event.preventDefault();
     let number1 = $("#input1").val();
-    let result = translatePigLatin(number1);
+    let result1 = acceptChar(number1);
+    let resutl2 = translatePigLatin(result1);
 
-    $("#output").text(result);
+    $("#output").text(result2);
   });
 });
