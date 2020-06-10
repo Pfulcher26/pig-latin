@@ -12,24 +12,15 @@ function translatePigLatin(str) {
       return newStr;
   }
 }
-function acceptChar(str) {
-	let acceptable = ['a', 'b', 'c'];
-  let newStr = "";
   
-  if (str !== acceptable.indexOf(str[0]) >-1) {
-      alert("unacceptable");
-      
-	}
-
-}
-
 $(document).ready(function() {
   $("form#calculator").submit(function() {
     event.preventDefault();
     let number1 = $("#input1").val();
-    let result1 = acceptChar(number1);
-    let resutl2 = translatePigLatin(result1);
+    let result = translatePigLatin(number1);
 
-    $("#output").text(result2);
+
+    $("#output").text(number1);
+    $("#output").text(result);
   });
 });
