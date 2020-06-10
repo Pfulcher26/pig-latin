@@ -24,7 +24,7 @@ _Program moves "qu" to the end of the word for words that begin with q_
 _Example Input: Quiet_
 _Example Output: Ietquay_
 
-_Program treats y as a consonant with words that begin with why_
+_Program treats y as a consonant with words that begin with ay_
 _Example Input: Yes_
 _Example output: Esyay_
 

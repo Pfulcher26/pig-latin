@@ -1,3 +1,4 @@
+
 function translatePigLatin(str) {
   let vowels = ['a', 'e', 'i', 'o', 'u'];
   let newStr = "";
@@ -12,23 +13,13 @@ function translatePigLatin(str) {
       return newStr;
   }
 }
-
+  
 $(document).ready(function() {
   $("form#calculator").submit(function() {
     event.preventDefault();
     let number1 = $("#input1").val();
     let result = translatePigLatin(number1);
-   
 
     $("#output").text(result);
   });
 });
-
-
-//let arrayOfVowels = ["a", "e", "i", "o", "u"]
-
-//if number1[0]  === arrayOfVowels {    
-    
-//}
-//}
-
